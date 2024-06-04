@@ -36,10 +36,10 @@ $offdelim
 ;
 
 Variables
+x(g,t,s) energioutput af ikke-vedvarende energi for generator g til tid t til scenarie s
 u(g,t) aktivitet for generator g til tid t
 v(g,t) opstartsbeslutning for generator g til tid t
 w(g,t) nedlukningsbeslutning for generator g til tid t
-x(g,t,s) energioutput af ikke-vedvarende energi for generator g til tid t til scenarie s
 xstor(t,s) lagerniveau til tid t til scenarie s
 xstorout(t,s) energioutflow fra lagerenheden til tid t til scenarie s
 xstorin(t,s) energiindstrømning til lagerenheden til tid t til scenarie s
