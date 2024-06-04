@@ -51,9 +51,12 @@ z objektfunktionsværdi
 ;
 
 Parameters
-R(s) z to each scenarie
+R(s) z til hvert scenarie s
 Ps(t) vindenergi
-JA(s,t)
+JA(s,t) a til hvert scenarie s
+JU(s,g,t) u til hvert scenarie s
+JV(s,g,t) v til hvert scenarie s
+JW(s,g,t) w til hvert scenarie s
 ;
 
 Binary Variables
@@ -140,8 +143,11 @@ loop(s,Ps(t)=P(t,s);
 Solve UC using mip minimizing z;
 R(s)=z.l;
 JA(s,t)=a.l(t);
+JU(s,g,t)=u.l(g,t);
+JV(s,g,t)=v.l(g,t);
+JW(s,g,t)=w.l(g,t);
 );
 
-display R, JA;
+display R, JA, JU, JV, JW;
 
-execute_unload "WS.gdx" R
+execute_unload "WS.gdx" R, JU, JV, JW, JA
