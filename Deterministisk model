@@ -29,10 +29,10 @@ Table data(g,*) 'Parameters that depend on generator g'
 ;
 
 Variables
+x(g,t) energioutput af ikke-vedvarende energi for generator g til tid t
 u(g,t) aktivitet for generator g til tid t
 v(g,t) opstartsbeslutning for generator g til tid t
 w(g,t) nedlukningsbeslutning for generator g til tid t
-x(g,t) energioutput af ikke-vedvarende energi for generator g til tid t
 xstor(t) lagerniveau til tid t
 xstorout(t) energioutflow fra lagerenheden til tid t
 xstorin(t) energiindstrømning til lagerenheden til tid t
